@@ -1,6 +1,6 @@
-package com.mindorks.framework.mvi.data.api
+package com.example.framework.mvi.data.api
 
-import com.mindorks.framework.mvi.data.model.User
+import com.example.framework.mvi.data.model.User
 import retrofit2.http.GET
 
 interface UserApi {

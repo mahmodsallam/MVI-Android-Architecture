@@ -1,12 +1,12 @@
-package com.mindorks.framework.mvi.ui.main.adapter
+package com.example.framework.mvi.ui.main.adapter
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.mindorks.framework.mvi.R
-import com.mindorks.framework.mvi.data.model.User
+import com.example.framework.mvi.R
+import com.example.framework.mvi.data.model.User
 import kotlinx.android.synthetic.main.item_layout.view.*
 
 class MainAdapter(

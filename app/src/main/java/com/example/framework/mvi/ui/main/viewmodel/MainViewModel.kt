@@ -1,10 +1,10 @@
-package com.mindorks.framework.mvi.ui.main.viewmodel
+package com.example.framework.mvi.ui.main.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.mindorks.framework.mvi.data.repository.MainRepository
-import com.mindorks.framework.mvi.ui.main.intent.MainIntent
-import com.mindorks.framework.mvi.ui.main.viewstate.MainState
+import com.example.framework.mvi.data.repository.MainRepository
+import com.example.framework.mvi.ui.main.intent.MainIntent
+import com.example.framework.mvi.ui.main.viewstate.MainState
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.channels.Channel

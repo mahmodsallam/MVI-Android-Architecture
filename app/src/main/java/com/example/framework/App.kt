@@ -1,4 +1,4 @@
-package com.mindorks.framework.base
+package com.example.framework
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp

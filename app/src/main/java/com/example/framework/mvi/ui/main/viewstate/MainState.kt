@@ -1,6 +1,6 @@
-package com.mindorks.framework.mvi.ui.main.viewstate
+package com.example.framework.mvi.ui.main.viewstate
 
-import com.mindorks.framework.mvi.data.model.User
+import com.example.framework.mvi.data.model.User
 
 sealed class MainState {
 

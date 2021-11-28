@@ -1,13 +1,10 @@
-package com.mindorks.framework.mvi.data.di
+package com.example.framework.mvi.data.di
 
-import android.app.Application
-import com.mindorks.framework.mvi.data.api.UserApi
-import com.mindorks.framework.mvi.data.repository.MainRepository
+import com.example.framework.mvi.data.api.UserApi
+import com.example.framework.mvi.data.repository.MainRepository
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
-import dagger.hilt.android.components.ActivityComponent
-import dagger.hilt.android.scopes.ViewScoped
 import dagger.hilt.components.SingletonComponent
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory

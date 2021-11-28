@@ -1,6 +1,6 @@
-package com.mindorks.framework.mvi.data.repository
+package com.example.framework.mvi.data.repository
 
-import com.mindorks.framework.mvi.data.api.UserApi
+import com.example.framework.mvi.data.api.UserApi
 import javax.inject.Inject
 
 
