@@ -27,8 +27,6 @@ class MainActivity : AppCompatActivity() {
     private val mainViewModel: MainViewModel by viewModels()
     private var adapter = MainAdapter(arrayListOf())
 
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -38,13 +36,13 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setupClicks() {
+        // Trigger the Intent to send the Action to the ViewModel
         buttonFetchUser.setOnClickListener {
             lifecycleScope.launch {
                 mainViewModel.userIntent.send(MainIntent.FetchUser)
             }
         }
     }
-
 
     private fun setupUI() {
         recyclerView.layoutManager = LinearLayoutManager(this)
@@ -60,8 +58,7 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-
-
+    // Observing on the UI State
     private fun observeViewModel() {
         lifecycleScope.launch {
             mainViewModel.state.collect {

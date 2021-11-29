@@ -21,9 +21,13 @@ class MainViewModel @Inject constructor (
     private val repository: MainRepository
 ) : ViewModel() {
 
+
+    //linked list of intents
     val userIntent = Channel<MainIntent>(Channel.UNLIMITED)
+
+    //The state and getting it
     private val _state = MutableStateFlow<MainState>(MainState.Idle)
-    val state: StateFlow<MainState>
+    val state: StateFlow<MainState> // uses state flow
         get() = _state
 
     init {
@@ -35,6 +39,7 @@ class MainViewModel @Inject constructor (
             userIntent.consumeAsFlow().collect {
                 when (it) {
                     is MainIntent.FetchUser -> fetchUser()
+                    is MainIntent.AnyAction -> "Do something"
                 }
             }
         }
